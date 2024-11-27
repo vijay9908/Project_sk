@@ -6,6 +6,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 main {
@@ -13,10 +14,31 @@ main {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   background-color: #f8f9fa;
   text-align: center;
   padding: 1rem;
+  margin-top: auto;
+}
+
+.carousel-item img {
+  width: 100%; /* Make the image take full width of the carousel */
+  height: 70vh; /* Set the fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio and crop the image */
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
 }

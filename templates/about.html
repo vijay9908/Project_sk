@@ -1,8 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<head>
+  <link rel="stylesheet" type="text/css" href="static/css/about.css">
+</head>
   <!-- Hero Section -->
-  <div class="container-fluid bg-primary text-white text-center py-5">
-    <h2>About Page content</h2>
-</div>
+<section class="hero">
+  <h1>About Us</h1>
+  <p>Empowering students with opportunities to shape their future.</p>
+</section>
+
+<!-- Mission Section -->
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+        At Skillful Consultancy, we guide students towards their dreams by connecting them with top educational opportunities. 
+        We are committed to providing personalized support at every step of the way.
+    </p>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <h2>Ready to take the next step?</h2>
+    <a href="/contact" class="cta-btn">Contact Us</a>
+</section>
 {% endblock %}
