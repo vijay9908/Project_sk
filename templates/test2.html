@@ -1,24 +1,32 @@
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Skillful Consultancy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Empowering students with opportunities to shape their future.</p>
+    </section>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="static/images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Skillful Consultancy
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
-            <a class="nav-link" href="#">Colleges</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">About Us</a>
-            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
-          </div>
-        </div>
-      </div>
-    </nav>
-    
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            At Skillful Consultancy, we guide students towards their dreams by connecting them with top educational opportunities. 
+            We are committed to providing personalized support at every step of the way.
+        </p>
+    </section>
 
-  </div>
-</nav>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to take the next step?</h2>
+        <a href="/contact" class="cta-btn">Contact Us</a>
+    </section>
+
+</body>
+</html>

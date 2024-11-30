@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Black header */
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1em;
+}
+
+.navbar nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e0e0e0; /* Light gray */
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Mission Section */
+.mission {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f4f4f4; /* Slightly lighter gray */
+}
+
+.mission h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.mission p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+/* Call to Action Section */
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white; /* Black */
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.cta .cta-btn {
+  background-color: #f4a261; /* Orange button */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cta .cta-btn:hover {
+  background-color: #e76f51; /* Darker orange */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9em;
+}
+
