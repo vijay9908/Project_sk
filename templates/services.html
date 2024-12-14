@@ -1,9 +1,69 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <!-- Hero Section -->
-  <div class="container-fluid bg-primary text-white text-center py-5">
-    <h2>Services page content</h2>
+  <link rel="stylesheet" type="text/css" href="static/css/services.css">
+
+  <!-- Main content section -->
+  <div class="content">
+    <h2 style="font-family: 'Courier New', monospace; font-size: 2.5rem; color: #ff6347; text-shadow: 2px 2px #000; text-align: center; margin-top: 10px;">
+      We get what you want, <span style="color: #32cd32;">no bakwaas</span>
+    </h2>
+    <p>
+      At Apex Consultancy, we specialize in helping you achieve your goals with </br><b><span style="font-size: 1.5rem;">"No Nonsense and Maximum Efficiency"</span></b></br>
+      Explore <b>opportunities, dream big,</b> and let us take care of the rest!
+    </p>
+
+    <!-- Filler art image -->
+    <img 
+      src="static/images/services/services_filler.webp" 
+      alt="Filler Art" 
+      class="filler-art"
+    >
   </div>
 
+  <div class="tile-container">
+    <!-- Tile 1 -->
+    {% for tile in tiles %}
+    <div class="tile">
+      <div class="tile-inner">
+        <div class="tile-front">
+          <img src="{{ url_for('static', filename=tile.image_path) }}" alt="Logo" class="tile-logo" />
+          <!-- <h3>Career Options</h3> -->
+          <p class="tile-desc">{{ tile.title }}</p>
+        </div>
+        <div class="tile-back">
+          <h3>{{ tile.title }}</h3>
+          <p class="desc" style="color: white">{{ tile.desc }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Career Section -->
+  <section class="career-section">
+    <div class="container-fluid">
+        <div class="row g-0">
+            <!-- Left Image -->
+            <div class="col-md-6 career-image">
+                <img src="static/images/services/reachus.png" alt="Professional Smiling" class="img-fluid">
+            </div>
+            <!-- Right Text -->
+            <div class="col-md-6 career-text">
+              <h3>WE GUARANTEE YOUR CAREER ENHANCEMENT AND REST</h3>
+              <h3>ASSURED YOUR FUTURE...</h3>
+              </br>
+              <h1>Reach us today</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
+
+<!-- 
+We get what you want, no bakwaas
+
+At Apex Consultancy, we specialize in helping you achieve your goals with "No Nonsense and Maximum Efficiency"
+Explore <b>opportunities, dream big, and let us take care of the rest!
+-->

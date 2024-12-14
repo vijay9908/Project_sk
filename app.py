@@ -19,7 +19,9 @@ def colleges():
 
 @app.route('/services')
 def services():
-  return render_template('services.html', active_page='services')
+  with open('services_tiles.json', 'r') as f:
+    tiles = json.load(f)
+  return render_template('services.html', tiles=tiles, active_page='services')
 
 @app.route('/about')
 def about():

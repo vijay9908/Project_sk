@@ -1,0 +1,169 @@
+
+/* Page styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light grey background */
+  background-image: "url(images/services/services_filler.webp)"; /* Optional subtle pattern */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Section styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Fancy H2 heading */
+h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 2.5rem;
+  color: #ff6347; /* Orange-red */
+  text-shadow: 1px 1px 2px #aaa;
+  margin-bottom: 20px;
+}
+
+/* Filler art styling */
+.filler-art {
+  max-width: 80%;
+  height: auto;
+  margin: 30px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Add padding for spacing */
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  max-width: 800px;
+}
+
+/* Tile Container */
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+  gap: 20px; /* Space between tiles */
+  padding: 20px; /* Padding around the grid */
+  max-width: 1200px; /* Limits width for better centering */
+  margin: 0 auto;
+}
+
+/* Individual Tile */
+.tile {
+  width: auto;
+  height: 150px;
+  perspective: 1000px; /* Adds depth for 3D effect */
+}
+
+.tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.3, 0.2, 0.1, 1.5);
+}
+
+.tile-logo {
+  position: absolute; /* Centering with absolute positioning */
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center perfectly */
+  width: 35px; /* Adjust the size of the logo */
+  height: 35px;
+  object-fit: contain; /* Ensures the logo maintains its aspect ratio */
+  z-index: 10; /* Ensures the logo appears above other content */
+}
+
+.tile:hover .tile-inner {
+  transform: rotateY(180deg); /* Flip animation */
+}
+
+/* Front and Back of the Tile */
+.tile-front, .tile-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back during flip */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.desc {
+  margin: 30px;
+  font-size: 0.7rem;
+}
+
+/* Front Side Styling */
+.tile-front {
+  background: linear-gradient(135deg, white, white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Side Styling */
+.tile-back {
+  /* background: linear-gradient(135deg, #ff5722, #ff9800); */
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tile-desc {
+  position: relative;
+  padding-top: 10%;
+}
+
+.career-section {
+  min-height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.career-text {
+  background-color: #0059cc; /* Blue Background */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: left;
+}
+
+.career-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.career-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.career-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.career-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
