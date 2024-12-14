@@ -1,0 +1,30 @@
+[
+  {
+      "name": "Ramaiah College of Engineering",
+      "image_path": "images/colleges/Engineering/ramaiah.jpeg",
+      "description": "M S Ramaiah Institute of Technology (MSRIT) was started in 1962 by Late Dr. M S Ramaiah.",
+      "link": "https://www.msrit.edu/",
+      "category": "Engineering"
+  },
+  {
+      "name": "BMS College of Engineering",
+      "image_path": "images/colleges/Engineering/bms.jpeg",
+      "description": "BMSCE is one of the top engineering colleges in Karnataka.",
+      "link": "https://bmsce.ac.in/",
+      "category": "Engineering"
+  },
+  {
+    "name": "Siddhartha Medical College (SMC)",
+    "image_path": "images/colleges/Engineering/ramaiah.jpeg",
+    "description": "smce is recognized for its excellence in technical education.",
+    "link": "https://rvce.edu.in/",
+    "category": "Medical"
+  },
+  {
+    "name": "sample BBA college",
+    "image_path": "images/colleges/Engineering/ramaiah.jpeg",
+    "description": "smce is recognized for its excellence in technical education.",
+    "link": "https://rvce.edu.in/",
+    "category": "Bussiness"
+  }
+]

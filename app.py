@@ -1,5 +1,6 @@
 from flask import Flask, render_template, Blueprint
 from flask import request, jsonify
+import json
 # from routes import routes
 
 app = Flask(__name__)
@@ -12,7 +13,9 @@ def home():
 
 @app.route('/colleges')
 def colleges():
-  return render_template('colleges.html', active_page='colleges')
+  with open('colleges.json', 'r') as f:
+    colleges = json.load(f)
+  return render_template('colleges.html', colleges=colleges, active_page='colleges')
 
 @app.route('/services')
 def services():

@@ -42,3 +42,11 @@ footer {
   font-size: 2.5rem;
   color: #333;
 }
+
+.navbar-logo {
+  width: 45px;
+  height: auto; /* Maintains aspect ratio */
+  margin: 0;
+  padding: 0;
+  padding-right: 5%;
+}

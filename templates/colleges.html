@@ -37,111 +37,72 @@
   </style>
 </head>
 
+<!-- section 1 -->
 <div class="section bg-light">
   <div class="container" id="engineering">
-      <h2>Engineering Colleges</h2>
-      <div class="row text-center">
+    <h2>Engineering Colleges</h2>
+    <div class="row text-center">
+      {% for college in colleges %}
+        {% if college.category == 'Engineering' %}
           <div class="col-md-4">
-              <div class="card">
-                  <img src="{{ url_for('static', filename='images/colleges/Engineering/ramaiah.jpeg') }}" class="card-img-top" alt="ramaiah">
-                  <div class="card-body">
-                      <h5 class="card-title">Ramaiah College of Engineering</h5>
-                      <p class="card-text">M S Ramaiah Institute of Technology (MSRIT) was started in 1962 by Late Dr. M S Ramaiah, our Founder Chairman who was a renowned visionary, philanthropist, and a pioneer in creating several landmark infrastructure projects in India. </p>
-                      <a href="https://www.msrit.edu/">know more</a>
-                    </div>
+            <div class="card">
+              <img src="{{ url_for('static', filename=college.image_path) }}" class="card-img-top" alt="{{ college.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ college.name }}</h5>
+                <p class="card-text">{{ college.description }}</p>
+                <a href="{{ college.link }}" target="_blank">Know more</a>
               </div>
+            </div>
           </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Feature 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Feature 2</h5>
-                      <p class="card-text">This is a description of feature 2. It helps you achieve more.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Feature 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Feature 3</h5>
-                      <p class="card-text">This is a description of feature 3. It's reliable and secure.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 <!-- Section 2 -->
-<div class="section bg-white">
+<div class="section bg-light">
   <div class="container" id="medical">
-      <h2>MBBS Colleges</h2>
-      <div class="row text-center">
+    <h2>Medical Colleges</h2>
+    <div class="row text-center">
+      {% for college in colleges %}
+        {% if college.category == 'Medical' %}
           <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Service 1</h5>
-                      <p class="card-text">We offer premium quality service 1 for all your needs.</p>
-                  </div>
+            <div class="card">
+              <img src="{{ url_for('static', filename=college.image_path) }}" class="card-img-top" alt="{{ college.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ college.name }}</h5>
+                <p class="card-text">{{ college.description }}</p>
+                <a href="{{ college.link }}" target="_blank">Know more</a>
               </div>
+            </div>
           </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Service 2</h5>
-                      <p class="card-text">Service 2 is tailored for professionals seeking efficiency.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Service 3</h5>
-                      <p class="card-text">Experience unparalleled excellence with service 3.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 <!-- Section 3 -->
 <div class="section bg-light">
-  <div class="container" id="bussiness">
-      <h2>BBA/ MBA Colleges</h2>
-      <div class="row text-center">
+  <div class="container" id="medical">
+    <h2>Bussiness Colleges</h2>
+    <div class="row text-center">
+      {% for college in colleges %}
+        {% if college.category == 'Bussiness' %}
           <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Team Member 1</h5>
-                      <p class="card-text">A brief introduction about team member 1 and their role.</p>
-                  </div>
+            <div class="card">
+              <img src="{{ url_for('static', filename=college.image_path) }}" class="card-img-top" alt="{{ college.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ college.name }}</h5>
+                <p class="card-text">{{ college.description }}</p>
+                <a href="{{ college.link }}" target="_blank">Know more</a>
               </div>
+            </div>
           </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Team Member 2</h5>
-                      <p class="card-text">A brief introduction about team member 2 and their expertise.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card">
-                  <img src="https://via.placeholder.com/300" class="card-img-top" alt="Team Member 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Team Member 3</h5>
-                      <p class="card-text">A brief introduction about team member 3 and their vision.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 

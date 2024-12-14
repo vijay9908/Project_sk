@@ -10,34 +10,34 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
   </head>
   <body>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('home') }}">
-              <img src="static/images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              Apex Consultancy
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('colleges') }}">Colleges</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('services') }}">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+					<a class="navbar-brand" href="{{ url_for('home') }}">
+						<img src="static/images/logo.png" alt="Logo" width="30" height="24" class="navbar-logo" class="d-inline-block align-text-top">
+						Apex Consultancy
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav me-auto">
+									<li class="nav-item">
+											<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="{{ url_for('colleges') }}">Colleges</a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="{{ url_for('services') }}">Services</a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+									</li>
+							</ul>
+					</div>
+			</div>
+		</nav>
 
     <div class="carousel">
       {% block content %}
