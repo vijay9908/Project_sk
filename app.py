@@ -1,10 +1,16 @@
 from flask import Flask, render_template, Blueprint
 from flask import request, jsonify
-import json
+from dotenv import load_dotenv
+import json, os
+from flask_cors import CORS
 # from routes import routes
 
+load_dotenv()
+
 app = Flask(__name__)
+CORS(app)
 # app.register_blueprint(routes)
+app.config['DEBUG'] = os.environ.get('FLASK_DEBUG')
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route('/')

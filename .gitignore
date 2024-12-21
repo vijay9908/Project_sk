@@ -1,3 +1,4 @@
 flask-starter
 .DStore
 .DS_Store
+.env
