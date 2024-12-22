@@ -1,30 +1,67 @@
 [
   {
-      "name": "Ramaiah College of Engineering",
-      "image_path": "images/colleges/Engineering/ramaiah.jpeg",
-      "description": "M S Ramaiah Institute of Technology (MSRIT) was started in 1962 by Late Dr. M S Ramaiah.",
-      "link": "https://www.msrit.edu/",
+      "name": "R. V. College of Engineering",
+      "image_path": "images/colleges/Engineering/rvcollege.jpg",
+      "description": "Established in 1963 with three engineering branches namely Civil, Mechanical and Electrical, today RVCE offers 15 Under Graduate Engineering programmes, 14 Master Degree programmes and Doctoral Studies.Located 13 km from the heart of Bangalore City – the Silicon Valley of India, on Mysore Road.Sprawling campus spread over an area of 16.85 acres (16 acres & 34 guntas) set in sylvan surroundings.",
+      "link": "https://www.rvce.edu.in/",
       "category": "Engineering"
   },
   {
-      "name": "BMS College of Engineering",
-      "image_path": "images/colleges/Engineering/bms.jpeg",
-      "description": "BMSCE is one of the top engineering colleges in Karnataka.",
-      "link": "https://bmsce.ac.in/",
-      "category": "Engineering"
+    "name": "Vellore Institute of Technology",
+    "image_path": "images/colleges/Engineering/VIT.webp",
+    "description": "VIT Group of Institutions offer 71 Undergraduate, 58 Postgraduate, 15 Integrated, 2 Research programmes and 2 M.Tech Industrial Programmes. In addition, full-time Ph.D. in Engineering and Management disciplines, Ph.D. in Science and Languages and Direct Ph.D. programmes in engineering disciplines are offered.",
+    "link": "https://vit.ac.in/",
+    "category": "Engineering"
   },
   {
-    "name": "Siddhartha Medical College (SMC)",
-    "image_path": "images/colleges/Engineering/ramaiah.jpeg",
-    "description": "smce is recognized for its excellence in technical education.",
-    "link": "https://rvce.edu.in/",
+    "name": "SRM Institute of Science and Technology",
+    "image_path": "images/colleges/Engineering/srm.jpg",
+    "description": "SRM Institute of Science and Technology, formerly SRM University, is a private deemed university, located in Kattankulathur, Chengalpattu, Tamil Nadu, India. Founded in 1985 as SRM Engineering College in Kattankulathur, it gained the deemed University status in 2002.",
+    "link": "https://www.srmist.edu.in/",
+    "category": "Engineering"
+  },
+  {
+    "name": "Amrita Vishwa Vidyapeetham",
+    "image_path": "images/colleges/Engineering/amrita.webp",
+    "description": "Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive university, ranked as one of the best institutions in India. With a focus on human values, innovation, and sustainability, Amrita offers a transformative education that combines academic excellence with a strong ethical foundation.",
+    "link": "https://aeee.amrita.edu/",
+    "category": "Engineering"
+  },
+
+  {
+    "name": "M. S. Ramaiah Medical College",
+    "image_path": "images/colleges/Medical/ramaiah-medical-college-bangalore-qlx1k6wcccddf0rmwrdv6kldbkga78c1efxkpm8aws.jpg.webp",
+    "description": "This programme covers all preclinical, para-clinical and clinical disciplines through theory classes and clinical training as mandated by the NMC guidelines.",
+    "link": "https://www.msrmc.ac.in/course/mbbs",
     "category": "Medical"
   },
   {
-    "name": "sample BBA college",
-    "image_path": "images/colleges/Engineering/ramaiah.jpeg",
-    "description": "smce is recognized for its excellence in technical education.",
-    "link": "https://rvce.edu.in/",
+    "name": "Akash Institute of Medical Science & Research Centre (AIMS & RC)",
+    "image_path": "images/colleges/Medical/institution-hospital-1.jpg",
+    "description": "Akash Institute of Medical Sciences & Research Centre (AIMS & RC) is one of the best medical colleges in Bangalore that was established in 2014 by the Akash Educational & Development Trust. The institute was established with the exclusive goal of providing knowledge in the field of medicine and shaping future doctors and the future healthcare of our nation. The Akash Institute of Medical Science & Research Centre is affiliated to Rajiv Gandhi University of Health Sciences (RGUHS), recognised by NMC and approved by the Government of India and Government of Karnataka. ",
+    "link": "https://www.akashinstitutions.com/colleges/akash-institute-of-medical-science-research-centre-aims-rc",
+    "category": "Medical"
+  },
+
+  {
+    "name": "Jain University",
+    "image_path": "images/colleges/Bussiness/JainUniversityBlr.jpg",
+    "description": "Jain University offers a two-year MBA course through the Center of Management Studies. Students pursuing the PG-level programme can opt for single or dual specialisation. Jain University MBA courses include an MBA in Marketing, an MBA in Business Analytics, an MBA in Finance, etc.",
+    "link": "https://www.jainuniversity.ac.in/program/management/mba-admission",
+    "category": "Bussiness"
+  },
+  {
+    "name": "Alliance School of Business",
+    "image_path": "images/colleges/Bussiness/alliance_blr.avif",
+    "description": "Alliance re-imagines the idea of the university by creating a community that leads the charge against the complex challenges of the 21st century. The university conceives research to be the essence of all teaching and learning practices. A unity between research and teaching is promoted to extend the frontiers of knowledge in order to solve real world problems at the local, national, and global scale.",
+    "link": "https://www.alliance.edu.in/school/school-of-business",
+    "category": "Bussiness"
+  },
+  {
+    "name": "Mount Carmel College",
+    "image_path": "images/colleges/Bussiness/mount_carmel.jpg",
+    "description": "Mount Carmel College Is Located In Palace Road, Bangalore. It Is An Autonomous Institute Which Is Affiliated To Bangalore University. The College Has Achieved 16th Rank By India Today.",
+    "link": "https://mccblr.edu.in",
     "category": "Bussiness"
   }
 ]
