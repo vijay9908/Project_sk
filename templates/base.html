@@ -39,6 +39,7 @@
 							</ul>
 					</div>
 			</div>
+            <!-- <button type="button" onclick="toggleDarkmode()" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
 		</nav>
 
     <div class="carousel">
@@ -64,13 +65,13 @@
               </div>
 
               <!-- About Info Column -->
-              <div class="col-md-5">
+              <div class="col-md-4">
                   <h5>About Us</h5>
                   <p>Apex Consultancy Services specializes in seamless admission solutions for B.Tech, BBA, MBA, and MBBS programs. We ensure guaranteed admissions with ease and professionalism.</p>
               </div>
 
               <!-- Social Media Links Column -->
-              <div class="col-md-3">
+              <div class="col-md-4">
                   <h5>Follow Us</h5>
                   <ul class="list-unstyled d-flex justify-content-center">
                       <li><a href="https://www.facebook.com/profile.php?id=61571207720373&mibextid=ZbWKwL" class="text-white me-4"><i class="bi bi-facebook"></i> Facebook</a></li>
@@ -84,6 +85,13 @@
           <p>&copy; 2024 Apex Consultancy. All Rights Reserved.</p>
       </div>
   </footer>
+
+  <script>
+    function toggleDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
 
 
 

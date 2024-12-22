@@ -3,143 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App - Tiles</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f4f8;
-}
-
-/* Tile Container */
-.tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Individual Tile */
-.tile {
-    width: 250px;
-    height: 300px;
-    perspective: 1000px; /* Adds depth for 3D effect */
-}
-
-.tile-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-
-.tile:hover .tile-inner {
-    transform: rotateY(180deg); /* Flip animation */
-}
-
-/* Front and Back of the Tile */
-.tile-front, .tile-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hides the back during flip */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px;
-}
-
-/* Front Side Styling */
-.tile-front {
-    background: linear-gradient(135deg, #007bff, #00bcd4);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Back Side Styling */
-.tile-back {
-    background: linear-gradient(135deg, #ff5722, #ff9800);
-    transform: rotateY(180deg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-    </style>
+    <title>Send Email</title>
 </head>
 <body>
+    <button id="sendMail">Send Mail</button>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hover Flip Tiles</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="tile-container">
-            <!-- Tile 1 -->
-            <div class="tile">
-                <div class="tile-inner">
-                    <div class="tile-front">
-                        <h2>Front Side</h2>
-                        <p>Hover to Flip</p>
-                    </div>
-                    <div class="tile-back">
-                        <h2>Back Side</h2>
-                        <p>More Info Here</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Tile 2 -->
-            <div class="tile">
-                <div class="tile-inner">
-                    <div class="tile-front">
-                        <h2>Learn More</h2>
-                        <p>Flip for Details</p>
-                    </div>
-                    <div class="tile-back">
-                        <h2>Extra Content</h2>
-                        <p>Custom Background!</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Tile 3 -->
-            <div class="tile">
-                <div class="tile-inner">
-                    <div class="tile-front">
-                        <h2>Tile 3</h2>
-                        <p>Front Content</p>
-                    </div>
-                    <div class="tile-back">
-                        <h2>Tile 3 Back</h2>
-                        <p>Hover Animation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-    </html>
-    
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('sendMail').addEventListener('click', function() {
+            const recipient = "vijaytanmay055@gmail.com";
+            const subject = "Hello!";
+            const body = "This is the body of the email.";
+            const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
